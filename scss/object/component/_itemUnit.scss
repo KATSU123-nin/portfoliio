@@ -12,6 +12,8 @@
   
   &_item {
     @include flex();
+    height: 200px;
+
 
     @include mq(md){
       display: block;
@@ -20,7 +22,6 @@
   }
 
   &_imageWrapper {
-    width: 100%;
     flex: 0 1 50%;
 
     @include mq(md){
@@ -36,9 +37,8 @@
 
   &_img {
     object-fit: cover;
+    height: 100%;
     width: 100%;
-    min-height: 1rem;
-    height: 2.5rem;
 
     @include mq(md){
       width: 80%;
@@ -57,22 +57,19 @@
 
   &_body {
     flex: 0 1 50%;
-
   }
 
-  
   &_title {
-    font-size: 0.18rem;
+    font-size: 1.125rem;
     font-weight: bold;
     text-align: center;
-    margin-top: 0.28rem;
-    margin-bottom: 0.28rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
+
 
     @include mq(md){
       display: none;
     }
-
-
   }
   
   &_title-tablet {
@@ -91,10 +88,12 @@
     }
   }
 
-  &_lead {
+  &_text {
     letter-spacing: 0.08em;
-    padding-right: 4%;
-    padding-left: 4%;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    padding-right: 10%;
+    padding-left: 10%;
 
     @include mq(md){
       width: 65%;
