@@ -1,0 +1,5 @@
+.sp-only {
+  @include mq(lg){
+    display: none;
+  }
+}
