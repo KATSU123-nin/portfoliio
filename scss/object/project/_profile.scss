@@ -8,4 +8,16 @@
     padding-top: 20px;
     padding-bottom: 20px;
   }
+
+  &_list {
+    margin-bottom: 10px;
+    font-family: $ff-hiragino;
+  }
+
+  &_history {
+    &_lead {
+      padding: 5px;
+      font-size: 0.875rem;
+    }
+  }
 }
