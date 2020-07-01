@@ -1,0 +1,27 @@
+.mainVisual {
+  height: 60%;
+  background-image: url(/image/mv-bg-image.png);
+  @include background--fit;
+
+  &_body {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 230px;
+    position: relative;
+    top: 30%;
+  }
+
+  &_title {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20%;
+    color: $white;
+    font-size: 4rem;
+    font-family: $ff-impact;
+    letter-spacing: 0.08em;
+    line-height: 1.2;
+    
+  }
+
+}

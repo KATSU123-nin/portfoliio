@@ -1,0 +1,35 @@
+// Resposive Size
+
+/* ======================== 
+レスポンシブ設定　Min-Width
+===========================*/
+
+$breakpoints: (
+  'msm': 'screen and (min-width: 300px)', //max-small
+  'mo': 'screen and (min-width: 375px)', //モバイル/iPhone8/XS
+  'sm': 'screen and (min-width: 414px)', //XS/XSMax/11/11Max
+  'smd': 'screen and (min-width: 600px)', //small
+  'md': 'screen and (min-width: 768px)', //iPad
+  'xs': 'screen and (min-width: 896px)', //XS/XSMax/11/11Max（横画面）
+  'lg': 'screen and (min-width: 1024px)', //iPad 横画面
+  'xl': 'screen and (min-width: 1200px)', //X-large
+  'pc': 'screen and (min-width: 1366px)', //iPad Pro/PC（横画面）
+
+  /* ========================
+  レスポンシブ設定　Max-Width
+===========================*/
+  'mxmd': 'screen and (max-width: 768px)', //iPad
+
+) !default;
+
+// z-index の指定
+$layer: (
+	loading: 200,
+	modal: 100,
+	drawer: 40,
+	floating: 30,
+	header: 20,
+	footer: 10,
+	default: 1
+);
+
