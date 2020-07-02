@@ -461,6 +461,8 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 30%;
           flex: 1 1 30%;
+  margin-left: 20px;
+  margin-top: 5%;
 }
 
 .oneRow_img {
@@ -484,6 +486,79 @@ section {
   font-size: 0.75rem;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.portfolio_subtitle {
+  text-align: center;
+  font-size: 1.125rem;
+  font-family: "ヒラギノ角ゴ StdN", "Hiragino Kaku Gothic StdN", sans-serif;
+  margin-bottom: 20px;
+}
+
+.portfolio_mysiteTitle {
+  font-size: 0.75rem;
+}
+
+.portfolio_mysiteXdImage {
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+.portfolio_mysiteCording {
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.portfolio_mysiteLead {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  padding: 20px;
+  -webkit-box-shadow: 3px 3px 10px;
+          box-shadow: 3px 3px 10px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.copySite_title {
+  text-align: center;
+  font-size: 1.125rem;
+  font-family: "ヒラギノ角ゴ StdN", "Hiragino Kaku Gothic StdN", sans-serif;
+  margin-bottom: 20px;
+}
+
+.copySite_lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.copySite_item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+  -webkit-box-shadow: 3px 3px 10px;
+          box-shadow: 3px 3px 10px;
+  margin-bottom: 5%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.copySite_item:nth-child(odd) {
+  margin-right: 4%;
+}
+
+.copySite_item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.text-supplement {
+  font-size: 0.75rem;
+  color: #F2798C;
+  text-align: left;
+  line-height: 1;
 }
 
 .bgBlack {

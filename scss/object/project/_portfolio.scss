@@ -1,0 +1,67 @@
+.portfolio {
+  &_subtitle {
+    text-align: center;
+    font-size: 1.125rem;
+    font-family: $ff-hiragino;
+    margin-bottom: 20px;
+  }
+
+  &_mysite {
+    &Title {
+      font-size: 0.75rem;
+    }
+
+
+
+    &XdImage {
+      border-radius: 20px;
+      margin-bottom: 30px;
+    }
+
+    &Cording {
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    &Lead {
+      font-size: 0.875rem;
+      line-height: 1.6;
+      padding: 20px;
+      box-shadow: 3px 3px 10px ;
+      padding-bottom: 20px;
+      margin-bottom: 50px;
+    }
+  }
+
+}
+
+.copySite{
+
+  &_title {
+    text-align: center;
+    font-size: 1.125rem;
+    font-family: $ff-hiragino;
+    margin-bottom: 20px;
+  }
+
+  &_lists {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+
+  &_item {
+    flex: 0 0 48%;
+    box-shadow: 3px 3px 10px;
+    margin-bottom: 5%;
+    transition: all 0.5s;
+
+    &:nth-child(odd) {
+      margin-right: 4%;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
