@@ -1,0 +1,42 @@
+.navBtn {
+  box-sizing: content-box;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: none;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: $white;
+
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: currentColor;
+    transform: translateY(10px);
+    transition: 0.3s ease-in-out;
+  }
+
+  &::before {
+    transform: translateY(-10px);
+    box-shadow: 0 10px currentColor;
+  }
+}
+
+/*=====ナビゲーション（閉じボタン）======  */
+
+.open .navBtn {
+  z-index: 1000;
+
+   &::before {
+    transform: rotate(-45deg);
+    box-shadow: none;
+  }
+
+   &::after {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+}

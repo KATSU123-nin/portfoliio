@@ -1,5 +1,20 @@
-footer {
+.footer {
   width: 100%;
-  height: 1.4rem;
-  margin-top: 1rem;
+  background-color: $dark-gray;
+  color: $white;
+  position: relative;
+  height: 8.75rem;
+  
+  &_inner {
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+  
+  }
+
+  &_sns {
+    margin-bottom: 10px;
+  }
 }

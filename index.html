@@ -7,8 +7,31 @@
   <meta name="description" content="KATSUのポートフォリオ" />
   <link rel="stylesheet" href="scss/style.css">
 </head>
+
+<header class="header sideSpace">
+  <h1 class="header_title">
+    KATSU
+  </h1>
+
+  <nav class="nav">
+    <ul class="nav_lists">
+      <li class="nav_list"><a href="#top">TOP</a></li>
+      <li class="nav_list"><a href="#concept">CONCEPT</a></li>
+      <li class="nav_list"><a href="#profile">PROFILE</a></li>
+      <li class="nav_list"><a href="#skills">SKILLS</a></li>
+      <li class="nav_list"><a href="#service">SERVICE</a></li>
+      <li class="nav_list"><a href="#portfolio">PORTFOLIO</a></li>
+      <li class="nav_list"><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <button type="button" class="navBtn" onClick="navFunc()">
+    <span class="sr-only">MENU</span>
+  </button>
+</header>
+
 <body>
-  <section class="mainVisual">
+  <section id="top" class="mainVisual">
     <div class="mainVisual_body">
       <h1 class="mainVisual_title">
         KATSU<br>
@@ -17,7 +40,7 @@
     </div><!-- /.mainVisual_body -->
   </section><!-- /.mainVisual -->
 
-  <section class="concept">
+  <section id="concept" class="concept">
     <h2 class="concept_title sec_title">
       CONCEPT
     </h2><!-- /.concept_title -->
@@ -65,7 +88,7 @@
 
   </section><!-- /.concept -->
 
-  <section class="profile">
+  <section id="profile" class="profile">
     <h2 class="profile_title sec_title">
       PROFILE
     </h2><!-- /.concept_title -->
@@ -90,7 +113,7 @@
       </div><!-- /.profile_wrapper-->
   </section><!-- /.profile -->
 
-  <section class="skills">
+  <section id="skills" class="skills">
     <h2 class="skills_title sec_title">SKILLS</h2>
     <div class="skills_wrapper">
       <div class="skills_inner">
@@ -161,7 +184,7 @@
     </div><!-- /.skills_wrapper -->
   </section><!-- /.skills -->
 
-  <section class="service">
+  <section id="service" class="service">
     <div class="service_wrapper sideSpace">
       <h2 class="service_title sec_title">SERVICE</h2>
       <div class="oneRow">
@@ -274,7 +297,7 @@
   </section>
   <!-- /.sevice -->
 
-  <section class="portfolio">
+  <section id="portfolio" class="portfolio">
     <h2 class="portfolio_title sec_title">PORTFOLIO</h2>
     <div class="portfolio_wrapper sideSpace">
 
@@ -335,7 +358,7 @@
     </div><!-- /.service_wrapper -->
   </section><!-- /.portfolio -->
 
-  <section class="contact">
+  <section id="contact" class="contact">
     <h2 class="contact_title sec_title">CONTACT</h2>
     <div class="contact_form">
       <p class="contact_text" >WEB制作に関することであれば、<br>なんでもお気軽にお問い合わせください。</p>
@@ -346,15 +369,21 @@
 
   <footer class="footer">
     <div class="footer_inner">
-      <div class="footer_copyright">
-        <p>
-          ©︎ KATSU 2020
-        </p>
-      </div>
       <div class="footer_sns">
         <a class="footer_sns-twitter" href=""><img src="/image/twitter.png" alt=""></a>
       </div>
+      <div class="footer_copyright">
+        <p>
+          ©︎&nbsp;KATSU&nbsp;2020&nbsp;All&nbsp;Rights&nbsp;Reserved.
+        </p>
+      </div>
     </div>
   </footer>
+
+  <script>
+    function navFunc() {
+      document.querySelector('html').classList.toggle('open')
+    }
+  </script>
 </body>
 </html>

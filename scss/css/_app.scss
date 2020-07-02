@@ -55,6 +55,8 @@
 @import "../object/component/itemUnit";
 @import "../object/component/section_title";
 @import "../object/component/card";
+@import "../object/component/navBtn";
+@import "../object/component/nav-display";
 
 //-------------------------------------------------
 // Project
@@ -83,5 +85,6 @@
 @import "../object/utility/background";
 @import "../object/utility/sidespace";
 @import "../object/utility/hr";
-@import "../object/utility/sponly";
+@import "../object/utility/sp-only";
 @import "../object/utility/fontfamily";
+@import "../object/utility/sr-only";
