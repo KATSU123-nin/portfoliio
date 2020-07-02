@@ -274,60 +274,49 @@ section {
   text-align: center;
 }
 
+.cardWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .card {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 44%;
-          flex: 1 1 44%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  width: 160px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 160px;
+          flex: 0 0 160px;
   background-color: #fff;
-  margin: 0.1rem;
-  padding: 0.14rem 0.08rem 0.30rem;
   text-align: center;
-  -webkit-box-shadow: 0.05rem 0.07rem 8px rgba(0, 0, 0, 0.4);
-          box-shadow: 0.05rem 0.07rem 8px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 5px 7px 8px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 7px 8px rgba(0, 0, 0, 0.4);
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
-@media screen and (min-width: 1024px) {
-  .card {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 29%;
-            flex: 1 1 29%;
-  }
+.card:nth-child(odd) {
+  margin-right: 15px;
 }
 
-.card_inner {
-  position: relative;
-  height: 3rem;
+.card_imageWrapper {
+  margin-bottom: 15px;
 }
 
-.card_inner_imageWrapper {
-  margin-right: 0.2rem;
+.cardBody_title {
+  font-family: "ヒラギノ角ゴ StdN", "Hiragino Kaku Gothic StdN", sans-serif;
+  margin-bottom: 16px;
 }
 
-.card_inner .card_image {
-  max-width: 2rem;
-  width: 1.05rem;
-  height: 1.1rem;
-  margin-bottom: 0.10rem;
-}
-
-.card_inner .cardBody {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-}
-
-.card_inner .cardBody_title {
-  font-size: 0.18rem;
-  font-weight: bold;
-  letter-spacing: 0.12em;
-}
-
-.card_inner .cardBody_text {
+.cardBody_text {
   text-align: left;
-  padding: 0.2rem;
+  font-size: 0.75rem;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .profile_wrapper {
@@ -453,6 +442,50 @@ section {
   font-size: 0.4375rem;
 }
 
+.service {
+  background: #EAEAEA;
+}
+
+.oneRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #fff;
+  margin-bottom: 40px;
+  padding: 22px 9px;
+  -webkit-box-shadow: 8px 8px 20px rgba(97, 97, 97, 0.589);
+          box-shadow: 8px 8px 20px rgba(97, 97, 97, 0.589);
+}
+
+.oneRow_imgWrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+}
+
+.oneRow_img {
+  width: 106px;
+  height: 86px;
+}
+
+.oneRow_inner {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+}
+
+.oneRow_title {
+  text-align: center;
+  letter-spacing: 1.5px;
+  font-family: "ヒラギノ角ゴ StdN", "Hiragino Kaku Gothic StdN", sans-serif;
+}
+
+.oneRow_text {
+  font-size: 0.75rem;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .bgBlack {
   background-color: #000000;
   padding: 0.05rem;
@@ -466,8 +499,7 @@ section {
 .hr-sytle {
   border-top: 5px solid #F2798C;
   width: 50%;
-  margin-top: 0.10rem;
-  margin-bottom: 0.10rem;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 1024px) {

@@ -1,0 +1,37 @@
+.service {
+  background: $gray;
+
+}
+
+.oneRow {
+  display: flex;
+  background: $white;
+  margin-bottom: 40px;
+  padding: 22px 9px;
+  box-shadow: (8px 8px 20px rgba(97, 97, 97, 0.589));
+
+  &_imgWrapper {
+    flex: 1 1 30%;
+  }
+
+  &_img {
+    width: 106px;
+    height: 86px;
+  }
+
+  &_inner {
+    flex: 1 1 60%;
+  }
+
+  &_title {
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-family: $ff-hiragino;
+  }
+
+  &_text {
+    font-size: 0.75rem;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
