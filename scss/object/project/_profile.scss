@@ -18,6 +18,10 @@
     &_lead {
       padding: 5px;
       font-size: 0.875rem;
+
+      @include mq(md){
+         font-size: 1.125rem;
+      }
     }
   }
 }
