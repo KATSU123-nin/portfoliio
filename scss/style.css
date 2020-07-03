@@ -445,14 +445,39 @@ html.open, .open body {
   color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .profile_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .profile_imageWrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 30%;
+            flex: 0 1 30%;
+  }
+}
+
 .profile_body {
   padding-top: 20px;
   padding-bottom: 20px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 60%;
+          flex: 0 1 60%;
 }
 
 .profile_list {
   margin-bottom: 10px;
   font-family: "ヒラギノ角ゴ StdN", "Hiragino Kaku Gothic StdN", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .profile_list {
+    font-size: 1.25rem;
+  }
 }
 
 .profile_history_lead {
@@ -513,6 +538,14 @@ html.open, .open body {
   background-color: #222222;
 }
 
+@media screen and (min-width: 768px) {
+  .skills_wrapper {
+    width: 80%;
+    height: 420px;
+    position: relative;
+  }
+}
+
 .skills_inner {
   position: absolute;
   top: 80px;
@@ -523,6 +556,15 @@ html.open, .open body {
           box-shadow: 12px 8px 15px rgba(0, 0, 0, 0.7);
   border-radius: 2px;
   padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .skills_inner {
+    height: 380px;
+    position: absolute;
+    top: 150px;
+    right: -120px;
+  }
 }
 
 .skillLists {
@@ -551,10 +593,26 @@ html.open, .open body {
   line-height: 2.4;
 }
 
+@media screen and (min-width: 768px) {
+  .skillLists_list {
+    width: 85px;
+    height: 115px;
+    padding-bottom: 25px;
+  }
+}
+
 .skillLists_iconWrapper {
   width: 24px;
   height: 29px;
   margin: 0 auto 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .skillLists_iconWrapper {
+    width: 50px;
+    height: 60px;
+    margin: 15px auto;
+  }
 }
 
 .skillLists_icon {
@@ -563,10 +621,23 @@ html.open, .open body {
   line-height: 29px;
 }
 
+@media screen and (min-width: 768px) {
+  .skillLists_icon {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .skillLists_name {
   display: block;
   line-height: 1.2;
   font-size: 0.4375rem;
+}
+
+@media screen and (min-width: 768px) {
+  .skillLists_name {
+    font-size: 1rem;
+  }
 }
 
 .service {
