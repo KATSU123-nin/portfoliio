@@ -487,7 +487,7 @@ html.open, .open body {
 
 @media screen and (min-width: 768px) {
   .profile_history_lead {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 }
 
