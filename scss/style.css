@@ -199,9 +199,7 @@ section {
 
 @media screen and (min-width: 1024px) {
   .itemUnit_imageWrapper {
-    position: relative;
-    padding-top: 65%;
-    overflow: hidden;
+    height: 300px;
   }
 }
 
@@ -218,17 +216,6 @@ section {
     border-radius: 50px 0 50px 0;
     -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
             box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .itemUnit_img {
-    height: 4rem;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
   }
 }
 
@@ -268,7 +255,7 @@ section {
 
 @media screen and (min-width: 1024px) {
   .itemUnit_title-tablet {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 }
 
@@ -292,7 +279,9 @@ section {
 
 @media screen and (min-width: 1024px) {
   .itemUnit_text {
-    font-size: 0.18rem;
+    font-size: 1.25rem;
+    width: 85%;
+    margin-left: 30px;
   }
 }
 
