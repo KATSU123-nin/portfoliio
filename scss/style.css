@@ -85,7 +85,7 @@ a {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
@@ -99,9 +99,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 80px;
+  height: 60px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .header_title {
@@ -383,6 +384,8 @@ section {
 }
 
 .navBtn {
+  position: fixed;
+  right: 10px;
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
   padding: 0;
@@ -433,21 +436,17 @@ section {
 }
 
 /*===ナビゲーションメニュー（開いた状態）===  */
-html.open, .open body {
-  overflow: hidden;
-}
-
 .open .header {
   position: relative;
   margin-bottom: -100px;
 }
 
 .open .nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 40vh;
   background: rgba(0, 0, 0, 0.8);
   color: #fff;
   padding-top: 50px;
@@ -552,6 +551,12 @@ html.open, .open body {
   background-repeat: no-repeat;
   background-position: center;
   background-color: #222222;
+}
+
+@media screen and (min-width: 768px) {
+  .mainVisual {
+    height: 100%;
+  }
 }
 
 .mainVisual_body {
@@ -978,12 +983,19 @@ html.open, .open body {
 
 .contact_wrapper {
   width: 80%;
+  max-width: 700px;
   height: 240px;
   margin: 0 auto;
   background: #fff;
   -webkit-box-shadow: 5px 7px 12px rgba(0, 0, 0, 0.4);
           box-shadow: 5px 7px 12px rgba(0, 0, 0, 0.4);
   padding: 20px 20px 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact_wrapper {
+    height: 300px;
+  }
 }
 
 .contact_title {

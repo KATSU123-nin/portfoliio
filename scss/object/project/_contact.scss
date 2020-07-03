@@ -5,11 +5,16 @@
 
   &_wrapper {
     width: 80%;
+    max-width: 700px;
     height: 240px;
     margin: 0 auto;
     background: $white;
     box-shadow: 5px 7px 12px rgba(0, 0, 0, 0.4);
     padding: 20px 20px 30px;
+
+    @include mq(md){
+      height: 300px;
+    }
   }
 
   &_title {
