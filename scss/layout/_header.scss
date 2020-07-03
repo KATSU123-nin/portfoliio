@@ -11,6 +11,10 @@
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0.5);
 
+  @include mq(md){
+    height: 100px;
+  }
+
 
   &_title {
     color: $white;
