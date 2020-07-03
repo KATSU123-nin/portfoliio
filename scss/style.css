@@ -302,7 +302,17 @@ section {
 
 @media screen and (min-width: 768px) {
   .sec_title {
-    font-size: 4rem;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    font-size: 4.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sec_title {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-size: 5rem;
   }
 }
 
@@ -318,35 +328,56 @@ section {
 }
 
 .card {
-  width: 160px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 160px;
-          flex: 0 0 160px;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
   background-color: #fff;
   text-align: center;
   -webkit-box-shadow: 5px 7px 8px rgba(0, 0, 0, 0.4);
           box-shadow: 5px 7px 8px rgba(0, 0, 0, 0.4);
+  margin-left: 2%;
   margin-bottom: 40px;
   padding-top: 20px;
   padding-bottom: 15px;
 }
 
-.card:nth-child(odd) {
-  margin-right: 15px;
+@media screen and (min-width: 768px) {
+  .card {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 30%;
+            flex: 0 1 30%;
+  }
 }
 
 .card_imageWrapper {
-  margin-bottom: 15px;
+  margin-bottom: 5%;
+  height: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .card_imageWrapper {
+    height: 140px;
+  }
+}
+
+.card_icon {
+  width: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .card_icon {
+    width: 120px;
+  }
 }
 
 .cardBody_title {
   font-family: "ヒラギノ角ゴ StdN", "Hiragino Kaku Gothic StdN", sans-serif;
   margin-bottom: 16px;
+  font-size: 1.25rem;
 }
 
 .cardBody_text {
   text-align: left;
-  font-size: 0.75rem;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -440,6 +471,20 @@ html.open, .open body {
   transition: 0.5s ease-in-out;
 }
 
+.profile {
+  background-color: #222222;
+  color: #fff;
+  margin-top: 10%;
+}
+
+@media screen and (min-width: 1024px) {
+  .profile {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .profile_wrapper {
   background-color: #313131;
   color: #fff;
@@ -456,8 +501,16 @@ html.open, .open body {
 @media screen and (min-width: 768px) {
   .profile_imageWrapper {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 30%;
-            flex: 0 1 30%;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .profile_imageWrapper {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 40%;
+            flex: 0 1 40%;
   }
 }
 
@@ -522,9 +575,44 @@ html.open, .open body {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .concept {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .concept {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .concept {
+    width: 80%;
+  }
+}
+
 .skills {
   width: 100%;
-  height: 500px;
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .skills {
+    margin-bottom: 120px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .skills {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 150px;
+  }
 }
 
 .skills_wrapper {
@@ -541,8 +629,9 @@ html.open, .open body {
 @media screen and (min-width: 768px) {
   .skills_wrapper {
     width: 80%;
-    height: 420px;
+    height: 450px;
     position: relative;
+    margin-left: 5%;
   }
 }
 
@@ -560,7 +649,7 @@ html.open, .open body {
 
 @media screen and (min-width: 768px) {
   .skills_inner {
-    height: 380px;
+    width: 80%;
     position: absolute;
     top: 150px;
     right: -120px;
@@ -585,7 +674,7 @@ html.open, .open body {
 .skillLists_list {
   width: 17%;
   height: 80px;
-  margin: 5% 1.5%;
+  margin: 3% 1.5%;
   background-color: rgba(27, 27, 27, 0.9);
   -webkit-box-shadow: 2px 3px 1px rgba(255, 255, 255, 0.7);
           box-shadow: 2px 3px 1px rgba(255, 255, 255, 0.7);
@@ -595,9 +684,16 @@ html.open, .open body {
 
 @media screen and (min-width: 768px) {
   .skillLists_list {
-    width: 85px;
+    width: 17%;
     height: 115px;
+    margin: 3% 1.5%;
     padding-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .skillLists_list {
+    margin: 2% 1.5%;
   }
 }
 
@@ -640,8 +736,22 @@ html.open, .open body {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .skillLists_name {
+    font-size: 1.25rem;
+  }
+}
+
 .service {
   background: #EAEAEA;
+}
+
+@media screen and (min-width: 1024px) {
+  .service {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .oneRow {
@@ -659,13 +769,14 @@ html.open, .open body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 30%;
           flex: 1 1 30%;
-  margin-left: 20px;
-  margin-top: 5%;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .oneRow_img {
-  width: 106px;
-  height: 86px;
+  width: 80%;
+  max-width: 250px;
+  height: auto;
 }
 
 .oneRow_inner {
@@ -675,13 +786,19 @@ html.open, .open body {
 }
 
 .oneRow_title {
+  font-size: 1.25rem;
   text-align: center;
   letter-spacing: 1.5px;
   font-family: "ヒラギノ角ゴ StdN", "Hiragino Kaku Gothic StdN", sans-serif;
 }
 
+@media screen and (min-width: 768px) {
+  .oneRow_title {
+    font-size: 1.5rem;
+  }
+}
+
 .oneRow_text {
-  font-size: 0.75rem;
   padding-left: 15px;
   padding-right: 15px;
 }

@@ -1,0 +1,15 @@
+.concept {
+  @include mq(md){
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mq(lg){
+    width: 90%;
+  }
+
+  @include mq(pc){
+    width: 80%;
+  }
+}
