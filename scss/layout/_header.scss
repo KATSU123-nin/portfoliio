@@ -21,5 +21,20 @@
     font-size: 1.75rem;
     font-family: $ff-impact;
     letter-spacing: 2.5px;
+
+
+    @include mq(md){
+      font-size: 2rem;
+    }
+  }
+
+  &_link {
+    transition: 0.5s ease-in-out;
+    &:hover {
+      background: rgb(255, 255, 255);
+      color: #000;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 }

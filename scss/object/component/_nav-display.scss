@@ -26,7 +26,7 @@ html.open, .open body {
   }
 
   &_link {
-    display: inline-block;
+    display: block;
     transition: 0.5s ease-in-out;
 
     &:hover {
